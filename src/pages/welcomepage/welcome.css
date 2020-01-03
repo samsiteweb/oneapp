@@ -1,0 +1,54 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 20px 0 20px;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardItem {
+  flex: 1;
+  border-radius: 10px;
+  height: 15vh;
+
+  box-shadow: 0 0px 1px 1px var(--iconcolor);
+}
+.cardItem:hover {
+  box-shadow: 0 5px 10px var(--iconcolor);
+}
+.accountCard {
+  height: 200px;
+  border-radius: 15px;
+}
+.accountCardItem {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+}
+.cardItemContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 12vh;
+  justify-content: space-between;
+}
+
+.iconContainer {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: var(--iconback);
+  border-radius: 50%;
+  border: 1.5px solid var(--iconcolor);
+  text-align: center;
+  justify-content: center;
+}
+.iconItem {
+  font-size: 30px;
+  align-self: center;
+  color: var(--iconcolor);
+}

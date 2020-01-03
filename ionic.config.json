@@ -1,5 +1,7 @@
 {
-  "name": "oneapp-v2",
-  "integrations": {},
+  "name": "OneApp",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }
