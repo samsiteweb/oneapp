@@ -1,12 +1,12 @@
 import React from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
-import { IonPage, IonButton, IonContent } from "@ionic/react";
+import { IonApp, IonButton, IonContent, IonNav } from "@ionic/react";
 import oneApp from "../../assets/imgs/oneApp.jpg";
 
 const LoginPage: React.FC = () => {
   return (
-    <IonPage>
+    <IonApp>
       <IonContent>
         <div
           style={{
@@ -57,7 +57,7 @@ const LoginPage: React.FC = () => {
               flexDirection: "column"
             }}
           >
-            <IonButton color='tertiary' shape='round'>
+            <IonButton color='tertiary' routerLink='/tabs' shape='round'>
               Login
             </IonButton>
             {/* <Link to='' className='forgot'>
@@ -69,7 +69,7 @@ const LoginPage: React.FC = () => {
           </div>
         </div>
       </IonContent>
-    </IonPage>
+    </IonApp>
   );
 };
 export default LoginPage;
